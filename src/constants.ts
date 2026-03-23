@@ -6,7 +6,7 @@
 export const SOCIAL_LINKS = {
   GITHUB: "https://github.com/ansh-jha2006", // YOUR_GITHUB_LINK
   LINKEDIN: "https://www.linkedin.com/in/ansh-jha-75a3a91b3/", // YOUR_LINKEDIN_LINK
-  RESUME: "https://drive.google.com/file/d/1LHHv06_uxueO-H9j64GsCD75uULwNm1E/view?usp=sharing", // YOUR_RESUME_PDF_LINK (Google Drive, Dropbox, etc.)
+  RESUME: "https://drive.google.com/file/d/1MRqAJLnXUaick-hYFIxp4vsc3rLAexPU/view?usp=sharing", // YOUR_RESUME_PDF_LINK (Google Drive, Dropbox, etc.)
   EMAIL: "ansh.jha0304@gmail.com",
 };
 
