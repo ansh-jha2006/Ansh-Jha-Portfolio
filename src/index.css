@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-electric: #00f2ff;
+  --color-dark-bg: #050505;
+  --color-dark-surface: #0a0a0a;
+  --color-dark-border: #1a1a1a;
+}
+
+@layer base {
+  body {
+    @apply bg-dark-bg text-white font-sans selection:bg-electric selection:text-black;
+    cursor: none;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-display tracking-tight;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-white/5 backdrop-blur-md border border-white/10;
+  }
+  
+  .text-glow {
+    text-shadow: 0 0 10px rgba(0, 242, 255, 0.5);
+  }
+
+  .border-glow {
+    box-shadow: 0 0 15px rgba(0, 242, 255, 0.2);
+  }
+}
+
+/* Custom Cursor Styles */
+.cursor-dot {
+  width: 8px;
+  height: 8px;
+  background-color: #00f2ff;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  transition: transform 0.1s ease-out;
+}
+
+.cursor-outline {
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(0, 242, 255, 0.5);
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9998;
+  transform: translate(-50%, -50%);
+  transition: transform 0.15s ease-out;
+}
+
+/* Thunderbolt Animation */
+@keyframes bolt-fade {
+  0% { opacity: 1; transform: scaleY(1); }
+  100% { opacity: 0; transform: scaleY(1.2); }
+}
+
+.bolt {
+  position: fixed;
+  pointer-events: none;
+  z-index: 9997;
+  stroke: #00f2ff;
+  filter: drop-shadow(0 0 5px #00f2ff);
+  animation: bolt-fade 0.4s ease-out forwards;
+}
+
