@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Terminal, Code2, Database, Layers, Cpu, Globe } from 'lucide-react';
+import { Terminal, Code2, Database, Layers, Cpu, Globe, Server, Container, Cloud, GitBranch, Network, Workflow, Boxes, FlaskConical, TableProperties, Braces } from 'lucide-react';
 
 const skills = [
   { name: 'Python', level: 'Advanced', icon: <Terminal />, category: 'Languages' },
@@ -9,6 +9,28 @@ const skills = [
   { name: 'OpenCV', level: 'Expert', icon: <Globe />, category: 'Libraries' },
   { name: 'C++', level: 'Intermediate', icon: <Code2 />, category: 'Languages' },
   { name: 'MySQL', level: 'Advanced', icon: <Database />, category: 'Tools' },
+  { name: 'Java', level: 'Advanced', icon: <Code2 />, category: 'Languages' },
+  { name: 'C', level: 'Intermediate', icon: <Code2 />, category: 'Languages' },
+  { name: 'PostgreSQL', level: 'Advanced', icon: <Database />, category: 'Tools' },
+  { name: 'HTML/CSS', level: 'Advanced', icon: <Braces />, category: 'Languages' },
+  { name: 'FastAPI', level: 'Advanced', icon: <Server />, category: 'Frameworks' },
+  { name: 'Flask', level: 'Advanced', icon: <Server />, category: 'Frameworks' },
+  { name: 'Scikit-learn', level: 'Advanced', icon: <FlaskConical />, category: 'Frameworks' },
+  { name: 'Pandas', level: 'Advanced', icon: <TableProperties />, category: 'Libraries' },
+  { name: 'NumPy', level: 'Advanced', icon: <TableProperties />, category: 'Libraries' },
+  { name: 'Docker', level: 'Advanced', icon: <Container />, category: 'Tools' },
+  { name: 'AWS', level: 'Intermediate', icon: <Cloud />, category: 'Cloud' },
+  { name: 'Azure', level: 'Intermediate', icon: <Cloud />, category: 'Cloud' },
+  { name: 'Vercel', level: 'Advanced', icon: <Cloud />, category: 'Cloud' },
+  { name: 'Render', level: 'Advanced', icon: <Cloud />, category: 'Cloud' },
+  { name: 'Git/GitHub', level: 'Expert', icon: <GitBranch />, category: 'Tools' },
+  { name: 'Snowflake', level: 'Intermediate', icon: <Database />, category: 'Tools' },
+  { name: 'Neo4j', level: 'Intermediate', icon: <Network />, category: 'Tools' },
+  { name: 'CI/CD', level: 'Intermediate', icon: <Workflow />, category: 'DevOps' },
+  { name: 'Microservices', level: 'Advanced', icon: <Boxes />, category: 'Architecture' },
+  { name: 'RESTful APIs', level: 'Advanced', icon: <Server />, category: 'Architecture' },
+  { name: 'System Architecture', level: 'Advanced', icon: <Boxes />, category: 'Architecture' },
+  { name: 'OOD & DSA', level: 'Advanced', icon: <Code2 />, category: 'Core Concepts' },
 ];
 
 export const Skills = () => {
