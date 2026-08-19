@@ -34,7 +34,7 @@ const projects = [
     description: 'Architected a scalable FastAPI/Snowflake microservice integrated with Neo4j to trace root-cause dependencies, with Gemini LLM workflows generating automated patch recommendations.',
     icon: <GitBranch />,
     image: 'https://picsum.photos/seed/gitmind/800/600',
-    link: PROJECT_LINKS.GITMIND
+    link: https://gitmind-frontend.vercel.app/
   },
   {
     title: 'EHR Analysis & Diagnostic Pipeline',
