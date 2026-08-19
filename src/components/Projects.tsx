@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ExternalLink, Github, Layers, Target, Scan } from 'lucide-react';
+import { ExternalLink, Github, Layers, Target, Scan, GitBranch, FileHeart, PackageSearch } from 'lucide-react';
 import { PROJECT_LINKS } from '../constants';
 
 const projects = [
@@ -27,6 +27,30 @@ const projects = [
     icon: <Scan />,
     image: 'https://picsum.photos/seed/vision/800/600',
     link: PROJECT_LINKS.LICENSE_PLATE
+  },
+  {
+    title: 'GitMind – Distributed AI Causal Debugging Platform',
+    tech: 'Python, FastAPI, SQL, Snowflake, Neo4j, Docker',
+    description: 'Architected a scalable FastAPI/Snowflake microservice integrated with Neo4j to trace root-cause dependencies, with Gemini LLM workflows generating automated patch recommendations.',
+    icon: <GitBranch />,
+    image: 'https://picsum.photos/seed/gitmind/800/600',
+    link: PROJECT_LINKS.GITMIND
+  },
+  {
+    title: 'EHR Analysis & Diagnostic Pipeline',
+    tech: 'Python, BERT, FastAPI, REST APIs',
+    description: 'Built an end-to-end document pipeline combining OCR with generative LLM and custom BERT models to process complex clinical reports via modular FastAPI services.',
+    icon: <FileHeart />,
+    image: 'https://picsum.photos/seed/ehrpipeline/800/600',
+    link: PROJECT_LINKS.EHR
+  },
+  {
+    title: 'DoseVis – Inventory Optimization Engine',
+    tech: 'Python, Scikit-learn, Docker, REST APIs',
+    description: 'Designed an Object-Oriented demand forecasting engine using Random Forest, achieving a 19% performance gain, containerized for multi-tenant batch processing.',
+    icon: <PackageSearch />,
+    image: 'https://picsum.photos/seed/dosevis/800/600',
+    link: PROJECT_LINKS.DOSEVIS
   }
 ];
 
