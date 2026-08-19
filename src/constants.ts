@@ -14,4 +14,7 @@ export const PROJECT_LINKS = {
   VIT: "https://github.com/ansh-jha2006/ML_Vision-Transformer", // PROJECT_GITHUB
   LANDMARK: "https://github.com/ansh-jha2006/ML_LandMark-Detection", // PROJECT_GITHUB
   LICENSE_PLATE: "https://github.com/ansh-jha2006/license_plate_recognition", // PROJECT_GITHUB
+  GITMIND: "#", // YOUR_GITMIND_GITHUB_LINK
+  EHR: "#", // YOUR_EHR_GITHUB_LINK
+  DOSEVIS: "#", // YOUR_DOSEVIS_GITHUB_LINK
 };
